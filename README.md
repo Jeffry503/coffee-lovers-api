@@ -16,3 +16,5 @@ This project showcases two varieties of coffee using data fetched from the Coffe
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/coffee-lovers-api.git
+
+2. Run from any of the HTML files once cloned or with Live Server.
