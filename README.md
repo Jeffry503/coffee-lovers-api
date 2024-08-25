@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project showcases different varieties of coffee using data fetched from the Coffee API. It includes pages for hot coffee varieties and cold coffee varieties.
+This project showcases two varieties of coffee using data fetched from the Coffee API. It includes pages for hot coffee varieties and cold coffee varieties.
 
 ## Files
 

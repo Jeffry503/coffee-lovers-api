@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
-    const apiBaseUrl = 'https://api.sampleapis.com/coffee'; // Base URL for the coffee API
+    const apiUrl = 'https://api.sampleapis.com/coffee'; //URL for the coffee API, there is two, one for hot and one for cold
 
-    // Function to fetch data from a specific endpoint
+    // Function to extracts data from a specific endpoint
     function fetchData(endpoint) {
-        fetch(`${apiBaseUrl}/${endpoint}`)
+        fetch(`${apiUrl}/${endpoint}`)
             .then(response => response.json())
             .then(data => displayData(data))
             .catch(error => console.error('Error fetching data:', error));
@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (window.location.pathname.includes('index.html')) {
             // Display hot coffee varieties
-            html = '<h2>Hot Coffee Varieties</h2><ul>';
+            html = '<h2>Hot Coffee Options</h2><ul>';
             data.forEach(item => {
                 html += `<li><strong>${item.title}</strong>: ${item.description}</li>`;
             });
             html += '</ul>';
         } else if (window.location.pathname.includes('cold.html')) {
             // Display iced coffee varieties
-            html = '<h2>Cold Coffee Varieties</h2><ul>';
+            html = '<h2>Iced Coffee Options</h2><ul>';
             data.forEach(item => {
                 html += `<li><strong>${item.title}</strong>: ${item.description}</li>`;
             });
